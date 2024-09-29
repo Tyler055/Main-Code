@@ -1,0 +1,198 @@
+Program Write-Up Document (PWUD) 
+
+Name: Tyler 
+Date: 9/29/2024 
+Course: CIDS 235-01 
+Assignment: A1 - Object Oriented Battle Creatures! 
+
+ 
+
+1. Explanation 
+
+Objective: Provide a clear and concise overview of your program. Explain the purpose of the class and its role within the context of the assignment. Describe how the class and its methods align with object-oriented programming principles. 
+
+Explanation: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor 
+
+2. UML Diagram of the Creature Class 
+
+Objective: Provide a visual representation of your class structure using a UML diagram. This helps in understanding the organization of the class and its relationships. 
+
+Details: 
+
+Include the class name, attributes, methods, and their access levels (e.g., public, private). 
+
+Use UML notation to show the relationships between attributes and methods. 
+
+Tools like PlantUML, Lucidchart, or even hand-drawn diagrams (scanned or photographed) are acceptable. 
+
+Diagram: 
+![](https://raw.githubusercontent.com/Tyler055/Main-Code/refs/heads/main/uml.png)
+ 
+
+3. Focused Discussion on Key Components of the Program 
+
+Objective: Provide an in-depth analysis of the core components of your program. 
+
+Details: 
+
+Class Design: Explain the rationale behind the design of the class, including how it models a battle creature and interacts with other classes or components. 
+
+Attributes: Discuss the chosen attributes, their data types, and how they are used within the class. 
+
+Methods: Describe each method's purpose, how it manipulates the class’s attributes, and how it supports the overall functionality. 
+
+Encapsulation: Explain how you have used encapsulation to protect and manage the class’s data. 
+
+Discussion: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor 
+
+4. Screenshots Demonstrating the Test Program 
+
+Objective: Provide visual proof that your test program works as intended. 
+
+Details: 
+
+Include screenshots showing the creation of an instance of your class and the execution of its methods. 
+
+Make sure the screenshots clearly display the program's output and any interactions with the class. 
+
+At least two screenshots should be provided: one showing the initial state of the creature and another showing the results after invoking some methods. 
+
+Screenshots: 
+![](https://raw.githubusercontent.com/Tyler055/Main-Code/refs/heads/main/Screen1.png)
+![](https://raw.githubusercontent.com/Tyler055/Main-Code/refs/heads/main/Screen%202.png)
+
+5. Creature Description Image 
+
+Objective: Include a visual representation of your creature based on its description. 
+
+Details: 
+
+Create or obtain an image that depicts the creature as described in the description attribute. 
+
+You can use graphic design tools, drawing software, or AI tools like ChatGPT to generate this image. 
+
+Ensure the image is clear and aligns with the attributes and description provided. 
+
+Image: 
+![](https://raw.githubusercontent.com/Tyler055/Main-Code/refs/heads/main/Wind%20Dragon%20Xavior.webp)
+ 
+
+6. Conclusion Summarizing Your Work 
+
+Objective: Reflect on the assignment and your process. 
+
+Details: 
+
+Summarize what you have achieved with the class. 
+
+Discuss any challenges you faced and how you overcame them. 
+
+Mention any insights or lessons learned about object-oriented programming and class design. 
+
+Conclusion: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor 
+
+7. Complete Java Code (Appendix) 
+
+Objective: Provide the full Java code for your class. 
+
+Details: 
+
+Include the complete and well-commented code of your class. 
+
+Ensure the code is formatted correctly and adheres to Java coding standards. 
+
+Place the code in the appendix section of your document. 
+
+Code: 
+
+// Defines the class `Xavior`, representing a creature 
+class Xavior {    
+    
+    // Attributes of the creature  
+    String Nickname = "Xav";  // Stores the creature's nickname, default is "Xav" 
+    String Type = "wind";  // Stores the type of the creature, default is "wind" 
+    String Description = "A powerful wind Dragon."; // Stores the description of the creature 
+    int Level = 1;   // Initial level of the creature, set to 1 
+    // Method to level up the creature 
+    void Levelup() { 
+        Level += 1; // Increases the creature's level by 1 
+    } 
+    // Getter method for the creature's current level 
+    int getLevel() { 
+        return Level; // Returns the current level of the creature 
+    }  
+    // Getter method for the creature's nickname 
+    String getNick() { 
+        return Nickname; // Returns the current nickname of the creature 
+    } 
+    // Setter method to update the creature's nickname  
+    void setNick(String Nick) { 
+        Nickname = Nick; // Sets the nickname to a new value 
+        Nick = "Xeno"; 
+    } 
+    // Getter method for the creature's type 
+    String getType() { 
+        return Type; // Returns the type of the creature 
+    } 
+    // Getter method for the creature's description 
+    String getDescription() { 
+        return Description; // Returns the description of the creature 
+    } 
+} 
+
+// Defines the `Main` class, which contains the entry point of the program 
+public class Main{ 
+    public static void main(String[] args) {
+    // Create a new instance of the Xavior class, representing a creature 
+    
+    Xavior Creature = new Xavior(); 
+    
+    // Display the initial state of the creature 
+    System.out.println("Initial state of BattleCreature:"); 
+    System.out.println("Nickname: " + Creature.getNick());// Retrieve and display the creature's nickname 
+    System.out.println("Type: " + Creature.Type); // Display the type of the creature 
+    System.out.println("Level: " + Creature.getLevel());// Retrieve and display the creature's 
+                                                        // current level
+    System.out.println("Description: " + Creature.getDescription());// Retrieve and display the 
+                                                                    // creature's description 
+    // Call the Levelup method to increase the creature's level
+    Creature.Levelup(); // Increment the creature's level by 1
+    // Call the setNick method to update the creature's nickname
+    Creature.setNick("Xeno"); // Change the nickname from "Xav" to "Xeno" 
+    // Display the updated state of the creature after leveling up and nickname change
+    System.out.println("After Calling Levelup and SatNick Methods:");
+    System.out.println("Nickname: " + Creature.getNick()); // Retrieve and display the new nickname
+    System.out.println("Type: " + Creature.Type); // Display the type of the creature 
+    System.out.println("Level: " + Creature.getLevel()); // Retrieve and display the updated level 
+    System.out.println("Description: " + Creature.getDescription());// Retrieve and display the 
+                                                                    // creature's description
+        }
+    } 
+8. References and Sources 
+
+Objective: Cite any resources or references used in your assignment. 
+
+Details: 
+
+The image was done by chat GTP. And the nickname selection was done by ChatGPT and It generated comments. 
+
+The dialogue till I got to the image I wanted and nickname I wanted.
+ 
+ 
+ 
+
+References: 
+
+- "AI Assistant: OpenAI's ChatGPT." 
+
+ 
+
+
+
+
