@@ -37,7 +37,6 @@ class Xavior {
     // Setter method to update the creature's nickname
     void setNick(String Nick) {
         Nickname = Nick; // Sets the nickname to a new value
-        Nick = "Xeno";
     }
     
     // Getter method for the creature's type
