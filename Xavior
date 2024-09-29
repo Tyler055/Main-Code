@@ -1,0 +1,54 @@
+/**
+ * Program Name: Object Oriented Battle Creatures!
+ * Author: Tyler Taubenheim
+ * Course: CIDS 235
+ * Date: 9/29/2024
+ * Assignment #1
+ *
+ * Description:
+ * The goal of this assignment is to help you create a class for a
+ * battle creature and demonstrate an understanding of OOP concepts
+ * like attributes, methods, and class design
+ */
+
+// Defines the class `Xavior`, representing a creature
+class Xavior {   
+    // Attributes of the creature 
+    String Nickname = "Xav";  // Stores the creature's nickname, default is "Xav"
+    String Type = "wind";  // Stores the type of the creature, default is "wind"
+    String Description = "A powerful wind Dragon."; // Stores the description of the creature
+    int Level = 1;  // Initial level of the creature, set to 1
+
+    // Method to level up the creature
+    void Levelup() {
+        Level += 1; // Increases the creature's level by 1
+    }
+
+    // Getter method for the creature's current level
+    int getLevel() {
+        return Level; // Returns the current level of the creature
+    } 
+       
+    // Getter method for the creature's nickname
+    String getNick() {
+        return Nickname; // Returns the current nickname of the creature
+    }
+
+    // Setter method to update the creature's nickname
+    void setNick(String Nick) {
+        Nickname = Nick; // Sets the nickname to a new value
+        Nick = "Xeno";
+    }
+    
+    // Getter method for the creature's type
+    String getType() {
+        return Type; // Returns the type of the creature
+    }
+
+    
+
+    // Getter method for the creature's description
+    String getDescription() {
+        return Description; // Returns the description of the creature
+    }
+}
