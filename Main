@@ -1,0 +1,40 @@
+/**
+ * Program Name: Object Oriented Battle Creatures!
+ * Author: Tyler Taubenheim
+ * Course: CIDS 235
+ * Date: 9/29/2024
+ * Assignment #1
+ *
+ * Description:
+ * The goal of this assignment is to help you create a class for a
+ * battle creature and demonstrate an understanding of OOP concepts
+ * like attributes, methods, and class design
+ */
+
+// Defines the `Main` class, which contains the entry point of the program
+public class Main{
+    public static void main(String[] args) {
+        // Create a new instance of the Xavior class, representing a creature
+        Xavior Creature = new Xavior();
+
+        // Display the initial state of the creature
+        System.out.println("Initial state of BattleCreature:");
+        System.out.println("Nickname: " + Creature.getNick()); // Retrieve and display the creature's nickname
+        System.out.println("Type: " + Creature.Type); // Display the type of the creature
+        System.out.println("Level: " + Creature.getLevel()); // Retrieve and display the creature's current level
+        System.out.println("Description: " + Creature.getDescription());// Retrieve and display the creature's description
+         
+        // Call the Levelup method to increase the creature's level
+        Creature.Levelup(); // Increment the creature's level by 1
+
+        // Call the setNick method to update the creature's nickname
+        Creature.setNick("Xeno"); // Change the nickname from "Xav" to "Xeno"
+    
+        // Display the updated state of the creature after leveling up and nickname change
+        System.out.println("After Calling Levelup and SatNick Methods:");
+        System.out.println("Nickname: " + Creature.getNick()); // Retrieve and display the new nickname
+        System.out.println("Type: " + Creature.Type); // Display the type of the creature
+        System.out.println("Level: " + Creature.getLevel()); // Retrieve and display the updated level
+        System.out.println("Description: " + Creature.getDescription());// Retrieve and display the creature's description
+        }
+    }
